@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "815604176955",
+    "firebase_url": "https://seguridad22-e244a.firebaseio.com",
+    "project_id": "seguridad22-e244a",
+    "storage_bucket": "seguridad22-e244a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815604176955:android:af44613b80258520",
+        "android_client_info": {
+          "package_name": "com.example.seguridad22"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815604176955-372ela05ds1iopk23u8djah36hu15bud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.seguridad22",
+            "certificate_hash": "14150202dd00eec3a50e0214227d3f831939facc"
+          }
+        },
+        {
+          "client_id": "815604176955-9puhf5rv2qu3hrp9m8ptpf7b9u19f966.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxMC8XKl9l-goL3TYF6N4WPIuo0jKRxWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815604176955-9puhf5rv2qu3hrp9m8ptpf7b9u19f966.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
