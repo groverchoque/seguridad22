@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".registrar_tienda"></activity>
+        <activity android:name=".registrar_producto"></activity>
+        <activity android:name=".registrar_tienda" />
         <activity android:name=".login_google" />
         <activity android:name=".creartienda" />
         <activity
             android:name=".principal"
             android:label="@string/title_activity_principal"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".registro" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".registro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
