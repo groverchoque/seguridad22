@@ -1,8 +1,12 @@
 package com.example.seguridad22;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -18,19 +22,32 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
-public class registro extends AppCompatActivity {
+public class detallesProducto extends AppCompatActivity {
+
     ArrayList<String> type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registro);
-        sendData();
-      //  setSpinner();
+        setContentView(R.layout.activity_detalles_producto);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        setSpinner();
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Registrando espere", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                sendData();
 
-        
-
+            }
+        });
     }
+
+
+
     private void sendData() {
 
         EditText names = findViewById(R.id.name);
@@ -45,7 +62,7 @@ public class registro extends AppCompatActivity {
         AsyncHttpClient client = new AsyncHttpClient();
         RequestParams params = new RequestParams();
         params.add("name", names.getText().toString());
-        params.add("addres", addresss.getText().toString());
+        params.add("address", addresss.getText().toString());
         params.add("password", passwords.getText().toString());
         params.add("email", emails.getText().toString());
         params.add("phone", phones.getText().toString());
@@ -58,33 +75,30 @@ public class registro extends AppCompatActivity {
             public void  onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse ) {
 
             }
-             public void onSuccess(int statusCode, Header[] headers,JSONObject response) {
-                 if (response.has("roles")) {
-                     Toast.makeText(registro.this, "usuario registrado con exito", Toast.LENGTH_LONG).show();
-                     Intent login =new Intent(registro.this, login_google.class);
-                     startActivity(login);
+            public void onSuccess(int statusCode, Header[] headers,JSONObject response) {
+                if (response.has("roles")) {
+                    Toast.makeText(detallesProducto.this, "usuario registrado con exito", Toast.LENGTH_LONG).show();
+                    Intent login =new Intent(detallesProducto.this, login_google.class);
+                    startActivity(login);
 
-                 }
-             }
+                }
+            }
 
         });
     };
 
-    // funcion seleccion de tipo
-
-   // private void setSpinner() {
-    //    type = new ArrayList<>();
-      //  type.add("Comprador");
-       // type.add("Vendedor");
-     ///   ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,type);
-      //  Spinner spinner = findViewById(R.id.typ);
-      //  spinner.setAdapter(adapter);
+    private void setSpinner() {
+        type = new ArrayList<>();
+        type.add("Comprador");
+        type.add("Vendedor");
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,type);
+        Spinner spinner = findViewById(R.id.typ);
+        spinner.setAdapter(adapter);
         //spinner.getSelectedItemPosition();
 
-
-
-
-    // }
+    }
 
 
 }
+
+

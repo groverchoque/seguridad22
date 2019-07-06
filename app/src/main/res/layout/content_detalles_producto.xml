@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registro">
 
-     //boton registrarse
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".detallesProducto"
+    tools:showIn="@layout/activity_detalles_producto">
+
+
+    //boton registrarse
     <Button
         android:id="@+id/registrer2"
         android:layout_width="match_parent"
@@ -22,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/typ" />
 
 
-     //boton cancelar
+    //boton cancelar
     <Button
         android:id="@+id/cancel"
         android:layout_width="match_parent"
@@ -139,6 +144,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+
+
+
 
 
 </android.support.constraint.ConstraintLayout>
