@@ -3,6 +3,7 @@ package com.example.seguridad22;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -25,12 +26,16 @@ public class registro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
-        sendData();
-      //  setSpinner();
 
-        
+
+
+
+
+
+
 
     }
+
     private void sendData() {
 
         EditText names = findViewById(R.id.name);
@@ -72,19 +77,23 @@ public class registro extends AppCompatActivity {
 
     // funcion seleccion de tipo
 
-   // private void setSpinner() {
-    //    type = new ArrayList<>();
-      //  type.add("Comprador");
-       // type.add("Vendedor");
-     ///   ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,type);
-      //  Spinner spinner = findViewById(R.id.typ);
-      //  spinner.setAdapter(adapter);
-        //spinner.getSelectedItemPosition();
+    private void setSpinner() {
+       type = new ArrayList<>();
+       type.add("Comprador");
+       type.add("Vendedor");
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,type);
+       Spinner spinner = findViewById(R.id.typ);
+        spinner.setAdapter(adapter);
+      //spinner.getSelectedItemPosition();
 
 
 
 
-    // }
+     }
 
 
+    public void enviar(View view) {
+
+        sendData();
+    }
 }

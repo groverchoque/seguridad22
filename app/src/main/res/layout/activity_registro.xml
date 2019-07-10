@@ -7,8 +7,9 @@
     tools:context=".registro">
 
      //boton registrarse
+
     <Button
-        android:id="@+id/registrer2"
+        android:id="@+id/registrate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -19,23 +20,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/typ" />
+        app:layout_constraintTop_toBottomOf="@+id/typ"
+        android:onClick="enviar"
+        />
 
 
-     //boton cancelar
-    <Button
-        android:id="@+id/cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/botonesredon"
-        android:text="Cancelar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registrer2" />
+
+    //boton cancelar
 
     <EditText
 

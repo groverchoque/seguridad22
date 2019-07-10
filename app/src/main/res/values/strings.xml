@@ -18,5 +18,9 @@
     <string name="login">login</string>
     <string name="title_activity_detalles_producto">detallesProducto</string>
     <string name="not_log_in">no puede niciar secion</string>
+    <string name="not_close_session">no se pudo serrar secion</string>
+    <string name="not_revoke">no reiniciatr</string>
+    <string name="revoke">revoke</string>
+    <string name="logout">logout</string>
 
 </resources>

@@ -34,6 +34,7 @@ public class detallesProducto extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setSpinner();
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,11 +43,10 @@ public class detallesProducto extends AppCompatActivity {
                         .setAction("Action", null).show();
                 sendData();
 
+
             }
         });
     }
-
-
 
     private void sendData() {
 
