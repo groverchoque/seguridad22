@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <corners android:textColor="@android:color/black" />
+    <corners app:backgroundTint="#3ad7ce" />
+
+
+    />
+
+</shape>

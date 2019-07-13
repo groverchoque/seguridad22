@@ -6,38 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".registro">
 
+     //boton registrarse
 
     <Button
-        android:id="@+id/registrer2"
+        android:id="@+id/registrate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/botonesredon"
+        android:onClick="enviar"
         android:text="Registrarse"
+        android:textColor="@android:color/black"
+        app:backgroundTint="#3ad7ce"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/typ" />
+        app:layout_constraintTop_toBottomOf="@+id/categorypro_txt" />
 
-    <Button
-        android:id="@+id/cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/botonesredon"
-        android:text="Cancelar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registrer2" />
+
+
+    //boton cancelar
 
     <EditText
 
-        android:id="@+id/name"
+        android:id="@+id/name_producto_txt"
         android:layout_width="347dp"
         android:layout_height="39dp"
         android:layout_marginStart="32dp"
@@ -67,7 +61,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/name_producto_txt" />
 
     <EditText
         android:id="@+id/email"
@@ -85,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <EditText
-        android:id="@+id/phone"
+        android:id="@+id/price_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -101,14 +95,14 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="347dp"
-        android:layout_height="49dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="Password"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addres" />
@@ -121,22 +115,24 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintBottom_toTopOf="@+id/name_producto_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dinosaurio" />
 
     <Spinner
-        android:id="@+id/typ"
-        android:layout_width="347dp"
-        android:layout_height="42dp"
+        android:id="@+id/categorypro_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone" />
+        app:layout_constraintTop_toBottomOf="@+id/price_txt"
+        android:background="@drawable/botonesredon"
+        />
 
 
 </android.support.constraint.ConstraintLayout>

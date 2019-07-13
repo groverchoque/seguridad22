@@ -1,13 +1,13 @@
-package com.example.seguridad22;
+package com.example.probando_login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class registrar_producto extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registrar_producto);
+        setContentView(R.layout.activity_main);
     }
 }
