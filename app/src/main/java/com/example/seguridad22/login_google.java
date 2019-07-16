@@ -158,5 +158,4 @@ public class login_google extends AppCompatActivity implements GoogleApiClient.O
     }
     ///   ter ino de metodo login google
 
-
  }

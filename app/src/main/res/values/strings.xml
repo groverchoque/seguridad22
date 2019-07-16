@@ -22,5 +22,8 @@
     <string name="not_revoke">no reiniciatr</string>
     <string name="revoke">revoke</string>
     <string name="logout">logout</string>
+    <string name="precio">Precio</string>
+    <string name="describe_lo_que_vendes_a_detalle">Describe lo que vendes</string>
+    <string name="cantidad">Cantidad</string>
 
 </resources>

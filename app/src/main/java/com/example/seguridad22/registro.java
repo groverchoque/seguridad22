@@ -32,12 +32,12 @@ public class registro extends AppCompatActivity {
 
     private void sendData() {
 
-        EditText names = findViewById(R.id.name_producto_txt);
+        EditText names = findViewById(R.id.name_txt);
         EditText  addresss= findViewById(R.id.addres);
         EditText passwords = findViewById(R.id.password);
         EditText emails = findViewById(R.id.email);
-        EditText phones = findViewById(R.id.price_txt);
-        Spinner types = findViewById(R.id.categorypro_txt);
+        EditText phones = findViewById(R.id.telefono_txt);
+        Spinner types = findViewById(R.id.tipo_txt);
 
         //llenado de tablas
 
@@ -80,7 +80,7 @@ public class registro extends AppCompatActivity {
        type.add("Comprador");
        type.add("Vendedor");
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,type);
-       Spinner spinner = findViewById(R.id.categorypro_txt);
+       Spinner spinner = findViewById(R.id.tipo_txt);
         spinner.setAdapter(adapter);
       //spinner.getSelectedItemPosition();
     }
