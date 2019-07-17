@@ -7,6 +7,7 @@ public class Utils {
     public static String REGISTER_PRODUCT = HOST + "/api/v1.0/product";
 
     public static String TOKEN ="";
+    public static String ID_USER = "";
 
 
 }

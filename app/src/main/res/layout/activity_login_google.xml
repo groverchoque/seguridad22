@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".login_google">
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="144dp"
-        android:layout_height="150dp"
+        android:layout_width="184dp"
+        android:layout_height="169dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/botonesredon"
         android:onClick="btnLogineemail"
@@ -86,16 +87,19 @@
 
 
     ////////boton inicio de secion google
-      <com.google.android.gms.common.SignInButton
+
+    <com.google.android.gms.common.SignInButton
         android:id="@+id/sing_in_button"
         android:layout_width="317dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnregistrar" />
+
+
 
 
 </android.support.constraint.ConstraintLayout>

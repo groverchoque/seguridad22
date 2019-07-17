@@ -1,4 +1,22 @@
 <resources>
+
+    <string-array name="estado">
+        <item>disponible</item>
+        <item>agotado</item>
+    </string-array>
+    <string-array name="categoria">
+    <item>automotriz</item>
+    <item>electrodomesticos</item>
+    <item>moda</item>
+    <item>hogar y cocina</item>
+    <item>jardineria</item>
+        <item>electronicos</item>
+        <item>otros</item>
+
+    </string-array>
+
+
+
     <string name="app_name">SEGURIDAD 2.2</string>
     <string name="title_activity_principal">principal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -25,5 +43,8 @@
     <string name="precio">Precio</string>
     <string name="describe_lo_que_vendes_a_detalle">Describe lo que vendes</string>
     <string name="cantidad">Cantidad</string>
+    <string name="nombre">Nombre</string>
+    <string name="camera">camera</string>
+    <string name="publicar">PUBLICAR</string>
 
 </resources>
